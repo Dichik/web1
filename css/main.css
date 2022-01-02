@@ -1,0 +1,134 @@
+:root {
+    --main-bg-color: white;
+    --grid-color: #d6d6d6;
+    --link-color: black;
+}
+
+/* 1 */
+.item-header {
+    grid-area: header;
+    height: 70px;
+    background: var(--main-bg-color);
+    font-size: 25px;
+    font-family: 'Architects Daughter', cursive;
+    min-width: 500px;
+}
+
+/* 2 */
+.item-div {
+    grid-area: section5;
+    height: 70px;
+    background: var(--main-bg-color);
+}
+
+/* 3 */
+.item-article {
+    height: 640px;
+    grid-area: main;
+    background: var(--main-bg-color);
+    min-width: 200px;
+}
+
+/* 4 */
+.item-section {
+    grid-area: left;
+    background: var(--main-bg-color);
+    height: 640px;
+    width: 300px;
+}
+
+/* 5 */
+.item-aside {
+    grid-area: right;
+    background: var(--main-bg-color);
+    height: 765px;
+    width: 300px;
+}
+
+/* 6 */
+.item-footer {
+    background: var(--main-bg-color);
+    grid-area: footer;
+    height: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+    .stl {
+        display: none;
+    }
+}
+
+.text-main {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.grid-container {
+    display: grid;
+    height: auto;
+    grid-template-areas:
+        'header header header header'
+        'left main main right'
+        'section5 section5 section5 right'
+        'footer footer footer footer';
+    grid-gap: 10px;
+    background-color: var(--grid-color);
+    padding: 10px;
+    font-size: 15px;
+    font-family: Courier, serif;
+}
+
+.border-div {
+    border: 2px dotted;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-y: hidden;
+}
+
+.grid-container > div {
+    background-color: var(--main-bg-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.link-to-smth {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.stl {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+#slogan {
+    left: 100px;
+    bottom: 10px;
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.for-ol {
+    padding-left: 50px;
+}
+
+#second {
+    padding-top: 30px;
+}
+
+#third {
+    padding-top: 60px;
+}
+
+#fourth {
+    padding-top: 90px;
+}
+
+#fifth {
+    padding-top: 120px;
+}
