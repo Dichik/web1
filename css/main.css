@@ -7,7 +7,7 @@
 /* 1 */
 .item-header {
     grid-area: header;
-    height: 70px;
+    height: 92%;
     background: var(--main-bg-color);
     font-size: 25px;
     font-family: 'Architects Daughter', cursive;
@@ -17,13 +17,13 @@
 /* 2 */
 .item-div {
     grid-area: section5;
-    height: 50px;
+    height: 100%;
     background: var(--main-bg-color);
 }
 
 /* 3 */
 .item-article {
-    height: 600px;
+    height: 100%;
     grid-area: main;
     background: var(--main-bg-color);
     min-width: 200px;
@@ -33,7 +33,7 @@
 .item-section {
     grid-area: left;
     background: var(--main-bg-color);
-    height: 600px;
+    height: 100%;
     width: 300px;
 }
 
@@ -41,7 +41,7 @@
 .item-aside {
     grid-area: right;
     background: var(--main-bg-color);
-    height: 705px;
+    height: 100%;
     width: 300px;
 }
 
@@ -49,7 +49,7 @@
 .item-footer {
     background: var(--main-bg-color);
     grid-area: footer;
-    height: 90px;
+    height: 100%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -68,23 +68,19 @@ p {
 
 .grid-container {
     display: grid;
-    height: auto;
     grid-template-areas:
         'header header header header'
         'left main main right'
-        'section5 section5 section5 right'
+        'left main main right'
         'footer footer footer footer';
-    grid-gap: 10px;
     background-color: var(--grid-color);
-    padding: 10px;
     font-size: 15px;
+    min-height: 100vh;
     font-family: Courier, serif;
 }
 
 .border-div {
     border: 2px dotted;
-    overflow: hidden;
-    overflow-y: scroll;
 }
 
 .grid-container > div {
