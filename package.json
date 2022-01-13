@@ -3,5 +3,20 @@
     "version": "1.0.0",
     "dependencies": {
         "husky": "^7.0.4"
+    },
+    "scripts": {
+        "stylelint": "stylelint \"css/**/*.css\" --ignore-path .gitignore",
+        "stylelint:fix": "stylelint --fix \"css/**/*.css\" --ignore-path .gitignore",
+        "jslint": "eslint \"js/**/*.js\" --ignore-path .gitignore",
+        "jslint:fix": "eslint --fix \"js/**/*.js\" --ignore-path .gitignore",
+        "prepare": "husky install",
+        "format": "prettier --check . --ignore-path .gitignore",
+        "format:fix": "prettier --write . --ignore-path .gitignore"
+    },
+    "devDependencies": {
+        "prettier": "2.5.1",
+        "stylelint": "^14.2.0",
+        "stylelint-config-standard": "^24.0.0",
+        "stylelint-config-standard-scss": "^3.0.0"
     }
 }

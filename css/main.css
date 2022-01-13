@@ -1,0 +1,106 @@
+:root {
+    --main-bg-color: white;
+    --grid-color: #d6d6d6;
+    --link-color: black;
+}
+
+/* 1 */
+.item-header {
+    grid-area: header;
+    height: 92%;
+    background: var(--main-bg-color);
+    font-size: 25px;
+    font-family: 'Architects Daughter', cursive;
+    min-width: 500px;
+}
+
+/* 2 */
+.item-div {
+    grid-area: section5;
+    height: 100%;
+    background: var(--main-bg-color);
+}
+
+/* 3 */
+.item-article {
+    height: 100%;
+    grid-area: main;
+    background: var(--main-bg-color);
+    min-width: 200px;
+}
+
+/* 4 */
+.item-section {
+    grid-area: left;
+    background: var(--main-bg-color);
+    height: 100%;
+    width: 300px;
+}
+
+/* 5 */
+.item-aside {
+    grid-area: right;
+    background: var(--main-bg-color);
+    height: 100%;
+    width: 300px;
+}
+
+/* 6 */
+.item-footer {
+    background: var(--main-bg-color);
+    grid-area: footer;
+    height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .stl {
+        display: none;
+    }
+}
+
+.text-main {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'left main main right'
+        'left main main right'
+        'footer footer footer footer';
+    background-color: var(--grid-color);
+    font-size: 15px;
+    min-height: 100vh;
+    font-family: Courier, serif;
+}
+
+.border-div {
+    border: 2px dotted;
+}
+
+.grid-container > div {
+    background-color: var(--main-bg-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.link-to-smth {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.stl {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+.for-ol {
+    padding-left: 50px;
+}
